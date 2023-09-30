@@ -123,3 +123,94 @@ button:hover{
 .social-icons a {
     margin: 0 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Pie de Página*/
+footer{
+    background: #0096FF;
+    padding: 25px 10px;
+    color: white;
+    line-height: 1.9;
+}
+.single-box h2{
+    font-size: 20px;
+    font-weight: 250;
+}
+.single-box p{
+    text-align: justify;
+}
+.single-box  i{
+   padding: 10px;
+}
+.single-box ul{
+   list-style: none; 
+}
+.grupo-2{
+    text-align: center;
+}
+
+div.single-box ul li a#texBlank {
+    color: white;
+    text-decoration: underline white;
+}
+
+div.grupo-2 a{
+    color: white;
+    text-decoration: underline white; 
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/*Whassap Flotante*/
+.whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom:60px;
+    right: 60px;
+    background-color: green;
+    color: #000;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1;
+
+    align-content: center;
+   
+}
+.float:hover{
+    color: #FFF;
+    animation:shake is;
+    width: 100px;
+    height: 100px;
+    animation-iteration-count: infinite;
+}
+
+.whatsapp-float a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.whatsapp-float a:hover{
+    width: 70px;
+    height: 70px;
+    bottom:55px;
+    right: 55px;
+    animation:shake is;
+}
+
