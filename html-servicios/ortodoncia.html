@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortodoncia</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/5475ee9225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/ortodoncia.css">
+    <!--Jquery y JS para incluir el navbar desde otro html-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('.navbar-container').load('/plantillas/navbar.html');
+        });
+        $(document).ready(function () {
+          $('.footer-container').load('/plantillas/footer.html');
+        });
+    </script>
+</head>
+<body>
+    <!--Se carga el Navbar en el contenedor-->
+    <div class="navbar-container"></div>
+    <!--Nombre del servicio-->
+    <section id="ortodoncia">
+        <div class="texto">
+            <h1>Ortodoncia</h1>
+            <h2>Inicio / Ortodoncia</h2>
+        </div>
+    </section>
+    <!--Detalles del servicio-->
+    <section id="detalles-servicio">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h4>Apuesta por lo mejor</h4>
+                <h3>Ortodoncia</h3>
+                <p>En Estudio Odontológico te ofrecemos, instalación de bracket metálicos o
+                    cerámicos y un control mensual. Para este tratamiento, contamos con
+                    profesionales de vasta experiencia y equipos de calidad que te garantizan una
+                    excelente atención.Escríbenos para contactarnos contigo y reservar tu hora
+                    de diagnóstico. <br>
+                    <h5>Nuestro tratamiento completo incluye:</h5>
+                    <ul>
+                        <li>Instalaciones de Brackets.</li>
+                        <li>10 controles.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Agendar hora-->
+    <section id="agendar">
+        <div class="container">
+            <div class="texto-agendar">
+                <h1>¡Agenda tu hora con nosotros!</h1>
+                <h4>Aprovecha esta oportunidad única</h4>
+                <button>Agenda una cita</button>
+                <div class="img-container"></div>
+            </div>
+        </div>
+    </section>
+    <!--Se carga el Footer en el contenedor-->
+    <div class="footer-container"></div>
+</body>
+</html>
