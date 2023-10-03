@@ -9,120 +9,7 @@ body{
     margin: 0;
     padding: 0;
 }
-button{
-    font-size: 20px;
-    font-weight:bold;
-    padding: 15px 15px;
-    border-radius: 10px;
-    background-color: #0096ff;
-    border: none;
-    color: white;
-}
-button:hover{
-    background-color: #1270b2;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-/*NAVBAR menu*/
-.navbar {
-    background-color: white; /* Cambia el color de fondo según tu preferencia */
-    color: #fff; /* Cambia el color del texto según tu preferencia */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: 2px solid #d5d7d8;
-}
-.container{
-    border-bottom: 3px solid #f0f6fb;
-}
-.logo {
-    flex-grow: 1; /* Permite que el logotipo crezca y ocupe el espacio disponible */
-    text-align: center; /* Centra el contenido horizontalmente */
-}
-.logo img {
-    max-width: 100%; /* Ajusta el tamaño del logo según tus necesidades */
-    
-}
-/*icono*/
-.social-icons a{
-    background-color: #F0F6FB; /* Color plomo */
-    border-radius: 30px; /* Hace que el borde sea redondeado (circular) */
-    width: 30px; /* Ancho del icono */
-    height: 30px; /* Altura del icono (ajusta según tus necesidades) */
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
 
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #FCF6FB; /* Cambia el color de resaltado según tu preferencia */
-}
-
-/* Icono de hamburguesa */
-.menu-icon {
-    display: none;/* Desaparece cursor hamburguesa*/
-    font-size: 24px;
-    cursor: pointer;
-    color: black;
-}
-
-/* Estilos para pantallas pequeñas (responsive) */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta la lista de menú en pantallas pequeñas */
-        flex-direction: column;
-        background-color: #0096FF; /* Cambia el color de fondo según tu preferencia */
-        position: absolute;
-        top: 60px; /* Ajusta la posición vertical del menú según tus necesidades */
-        left: 0;
-        right: 0;
-        padding: 30px 30px;
-        justify-content: center;
-        align-items: center;
-     
-    }
-
-    .menu.active {
-        display: flex; /* Muestra la lista de menú cuando el menú está activo */
-    }
-
-    .menu-icon {
-        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
-    }
-    
-}
-
-/* Estilos para los íconos de redes sociales en pantallas pequeñas */
-.social-icons {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
 /*BIENVENIDA*/
 #hero{
     display: flex;
@@ -140,6 +27,35 @@ button:hover{
     font-size: 1.7em;
     font-weight:bolder;
 }
+ #hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+#hero .texto{
+    width: 40%;
+    padding: 0px 30px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: initial;
+}
+#hero button{
+    width: 250px;
+}
+#hero .img-container{
+    background-image: url("img/sonrisa.png");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 400px;
+    align-content: center;
+}
+#hero .container .texto{
+    padding: 20px;
+}
 /*CONTACTANOS*/
 #contactanos{
     color: #0096FF;
@@ -152,6 +68,11 @@ button:hover{
 #contactanos h1{
     padding: 30px 40px;
     font-size: 1.7em;
+    font-weight: bold;
+}
+#contactanos{
+    margin-top: 60px;
+    padding: 30px 40px;
     font-weight: bold;
 }
 /*Consejos*/
@@ -245,28 +166,57 @@ button:hover{
     )
     ,url("img/muelas-juicio.jpg");
 }
-/*Especialistas*/
+/*especialista*/
 #nuestros-especialistas .container{
     text-align: center;
-    padding: 50px 10px;
+    padding: 30px 10px;
+    justify-content: center;
+    align-items: center;
 }
-#nuestros-especialistas .container h4{
+#nuestros-especialistas h2{
+    margin-top: 50px;
+    text-align: center;
+}
+#nuestros-especialistas .container .doctores {
+    align-items: center;
+    display:flex;
+    padding: 20px 5px;
+    justify-content: center;
+    margin: 50px;
+}
+#nuestros-especialistas .container .carta{
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+#nuestros-especialistas .container .carta .img{
+    max-width: 100%;
+    height: auto;
+}
+#nuestros-especialistas h3{
+    padding: 5px;
+    text-align: center;
+}
+#nuestros-especialistas h4{
+    padding: 5px;
+    text-align: center;
     color: #0096FF;
-    margin-top: 0px;
-    margin-bottom: 0;
 }
-#nuestros-especialistas .container a{
+#stilo-icono{
     padding: 0px 15px;
     text-decoration: none;
     margin-bottom: 20px;
     margin-top: 10px;
 }
-#nuestros-especialistas .container h3{
-    margin-bottom: 0px;
-}
-#nuestros-especialistas .container .carta{
-    margin-top: 25px;
-    background-color: #f0f6fb;
+@media (max-width: 1500px){
+   /*Especialistas*/
+   #nuestros-especialistas .container .doctores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    } 
 }
 
 /*Opiniones*/
@@ -342,106 +292,10 @@ button:hover{
 #nuestro-blog #detalles{
     margin-top: 10px;
 }
-/*Pie de Página*/
-footer{
-    background: #0096FF;
-    padding: 25px 10px;
-    color: white;
-    line-height: 1.9;
-}
-.single-box h2{
-    font-size: 20px;
-    font-weight: 250;
-}
-.single-box p{
-    text-align: justify;
-}
-.single-box  i{
-   padding: 10px;
-}
-.single-box ul{
-   list-style: none; 
-}
-.grupo-2{
-    text-align: center;
-}
-div.single-box ul li a#texBlank {
-    color: white;
-    text-decoration: underline white;
-}
-div.grupo-2 a{
-    color: white;
-    text-decoration: underline white; 
-}
-.img-responsive{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 @media (min-width: 1000px){
-    header{     /*Fijar navbar*/
-       position: fixed;
-        width: 100%;
-    }
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-        height: 70px;
-    }
-    header nav{
-        flex-direction: row;
-        padding-top: 0;
-        padding-right: 20px;
-        
-    }
-    header .iconos{
-        margin-bottom: 0px;
-    }
-
-    /*Bienvenida*/
-    #hero{
-        background-image: url("img/gota.png");
-        background-position: top right;
-        background-repeat: no-repeat
-    }
-    #hero .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        perspective: 200px;
-    }
-    #hero .texto{
-        width: 40%;
-        padding: 20px 30px;
-        max-width: 600px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: initial;
-    }
-    #hero button{
-        width: 250px;
-    }
-    #hero .img-container{
-        background-image: url("img/sonrisa.png");
-        background-size: cover;
-        background-position: center center;
-        height: 300px;
-        width: 500px;
-        align-content: center;
-        border-radius: 10px;
-        rotate: -12deg;
-        transform: rotate3d(0,1,1,5deg);
-    }
-    /*Contactanos*/
-    #contactanos{
-        margin-top: 60px;
-        padding: 30px 40px;
-        font-weight: bold;
-    }
-
+    
     /*Consejos*/
     #consejos .container{
         display: flex;
@@ -462,7 +316,7 @@ div.grupo-2 a{
     }
 
     #consejos .img-container{
-        background-image: url("img/chica-sonriente.png");
+        background-image: url("/img/chica-sonriente.png");
         background-size: cover;
         background-position: center center;
         height: 320px;
@@ -480,7 +334,7 @@ div.grupo-2 a{
         width: 440px;
         height: 410px;
         background-size: cover;
-        background-image: url("img/redondito.png");
+        background-image: url("/img/redondito.png");
     }
 
     /*Servicios*/
@@ -509,90 +363,4 @@ div.grupo-2 a{
     #nuestro-blog .container p:not(.publicaciones *){
         padding: 20px 200px;
     }
-    
-    /*Especialistas*/
-    #nuestros-especialistas .container .doctores{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
 }
-/*Pie de Página*/
-footer{
-    background: #0096FF;
-    padding: 25px 10px;
-    color: white;
-    line-height: 1.9;
-}
-.single-box h2{
-    font-size: 20px;
-    font-weight: 250;
-}
-.single-box p{
-    text-align: justify;
-}
-.single-box  i{
-   padding: 10px;
-}
-.single-box ul{
-   list-style: none; 
-}
-.grupo-2{
-    text-align: center;
-}
-
-div.single-box ul li a#texBlank {
-    color: white;
-    text-decoration: underline white;
-}
-
-div.grupo-2 a{
-    color: white;
-    text-decoration: underline white; 
-}
-.img-responsive{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-/*Whassap Flotante*/
-.whatsapp-float{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom:60px;
-    right: 60px;
-    background-color: green;
-    color: #000;
-    border-radius: 50px;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1;
-
-    align-content: center;
-   
-}
-.float:hover{
-    color: #FFF;
-    animation:shake is;
-    width: 100px;
-    height: 100px;
-    animation-iteration-count: infinite;
-}
-
-.whatsapp-float a{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.whatsapp-float a:hover{
-    width: 70px;
-    height: 70px;
-    bottom:55px;
-    right: 55px;
-    animation:shake is;
-}
-
-
