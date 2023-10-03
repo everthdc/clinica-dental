@@ -38,7 +38,7 @@ button:hover{
         0deg,
         rgba(1, 12, 23, 0.377),
         rgba(2, 15, 24, 0.468)
-    ),url(/img/ortodoncia-banner2.jpg);
+    ),url("/img/ortodoncia-banner2.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -46,7 +46,6 @@ button:hover{
     color: white;
     font-weight: bold;
     font-size: 3em;
-
 }
 #ortodoncia h2{
     color: white;
@@ -66,6 +65,7 @@ button:hover{
 #detalles-servicio h3{
     font-weight:100px;
 }
+#detalles-servicio h5{ font-weight: 600;}
 /*Agendar*/
 #agendar{
     background-color: #80CAFF;
@@ -78,4 +78,42 @@ button:hover{
 #agendar .texto-agendar{
     text-align: center;
     justify-content: center;
+}
+@media (min-width: 900px){
+    /*Detalles del servicio*/
+    #ortodoncia{
+        text-align: left;
+        height: 350px;
+    }
+    #ortodoncia .texto{
+        padding-left: 50px;
+    }
+    #detalles-servicio .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 200px;
+    }
+    #detalles-servicio .img-container{
+        background-image: url("/img/revisión-dental.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+        align-content: center;
+        border-radius: 10px;
+        rotate: -12deg;
+        transform: rotate3d(0,1,1,5deg);
+    }
+    #detalles-servicio .texto{
+        width: 50%;
+        padding: 20px 30px;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: initial;
+        padding-left: 70px;
+    }
+    /*Asignar hora*/
 }

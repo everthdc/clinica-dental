@@ -39,14 +39,89 @@ body{
     color: white;
     margin: auto;
 }
+/*contacto detalle direccion,datos de contacto y horarios*/
+.datos .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+}
+.container .direccion{
+    justify-content: center;
+    margin: 100px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+/*mapa*/
+#iframe-container{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 70%;
+    margin: -20px;
+}
+iframe {
+    width: 100%; /* Ancho del iFrame */
+    max-width: 1000px; /* Máximo ancho del iFrame */
+}
+/*Formulario*/
+#formulario{
+    margin: 70px;
+}
+#formulario .container{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+#texto-form{
+    display: flex;
+    justify-content: flex-start;
+}
+input.form-control,
+textarea.form-control {
+    background-color: #F0F6FB;
+}
 
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #0096FF; 
+}
 
+@media (max-width:1000px){
+    .datos .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+    .container .direccion{
+        justify-content: center;
+        margin: 15px;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+    }
+}
 
-
-
-
-
-
-
-
-
+@media (max-width:300px){
+    .datos .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+    .container .direccion{
+        justify-content: center;
+        margin: 15px;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+    }
+    #formulario .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
