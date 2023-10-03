@@ -25,104 +25,7 @@ button:hover{
     max-width: 1400px;
     margin: auto;
 }
-/*NAVBAR menu*/
-.navbar {
-    background-color: white; /* Cambia el color de fondo según tu preferencia */
-    color: #fff; /* Cambia el color del texto según tu preferencia */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: 2px solid #d5d7d8;
-}
-.container{
-    border-bottom: 3px solid #f0f6fb;
-}
-.logo {
-    flex-grow: 1; /* Permite que el logotipo crezca y ocupe el espacio disponible */
-    text-align: center; /* Centra el contenido horizontalmente */
-}
-.logo img {
-    max-width: 100%; /* Ajusta el tamaño del logo según tus necesidades */
-    
-}
-/*icono*/
-.social-icons a{
-    background-color: #F0F6FB; /* Color plomo */
-    border-radius: 30px; /* Hace que el borde sea redondeado (circular) */
-    width: 30px; /* Ancho del icono */
-    height: 30px; /* Altura del icono (ajusta según tus necesidades) */
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
 
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #FCF6FB; /* Cambia el color de resaltado según tu preferencia */
-}
-
-/* Icono de hamburguesa */
-.menu-icon {
-    display: none;/* Desaparece cursor hamburguesa*/
-    font-size: 24px;
-    cursor: pointer;
-    color: black;
-}
-
-/* Estilos para pantallas pequeñas (responsive) */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta la lista de menú en pantallas pequeñas */
-        flex-direction: column;
-        background-color: #0096FF; /* Cambia el color de fondo según tu preferencia */
-        position: absolute;
-        top: 60px; /* Ajusta la posición vertical del menú según tus necesidades */
-        left: 0;
-        right: 0;
-        padding: 30px 30px;
-        justify-content: center;
-        align-items: center;
-     
-    }
-
-    .menu.active {
-        display: flex; /* Muestra la lista de menú cuando el menú está activo */
-    }
-
-    .menu-icon {
-        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
-    }
-    
-}
-
-/* Estilos para los íconos de redes sociales en pantallas pequeñas */
-.social-icons {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
 /*BIENVENIDA*/
 #hero{
     display: flex;
@@ -175,17 +78,24 @@ button:hover{
 #nuestros-servicios p{
     display: none;
 }
+#nuestros-servicios h1{
+    font-weight: bold;
+}
 #nuestros-servicios h2{
     margin-top: 0;
 }
+#nuestros-servicios h3{
+    font-weight: bold;
+}
 #nuestros-servicios a{
-    text-decoration: none;
     background-position: center center;
     background-size: cover;
     color: white;
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+    font-weight: bold;
+    font-size: 18px;
 }
 #nuestros-servicios .container .carta{
     background-position: center center;
@@ -194,9 +104,10 @@ button:hover{
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
+    text-align: center;
+    justify-content: center;
 }
 #nuestros-servicios .carta:first-child{
-
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -248,7 +159,11 @@ button:hover{
 /*Especialistas*/
 #nuestros-especialistas .container{
     text-align: center;
-    padding: 50px 10px;
+    padding: 120px 10px;
+}
+#nuestros-especialistas h1{
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 #nuestros-especialistas .container h4{
     color: #0096FF;
@@ -278,6 +193,10 @@ button:hover{
     padding: 20px;
     margin: 20px;
 }
+#opiniones h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 #opiniones .img-container{
     margin: auto;
     margin-top: 30PX;
@@ -304,6 +223,8 @@ button:hover{
 #nuestro-blog{
     text-align: center;
 }
+#nuestro-blog h1{font-weight: bold}
+#nuestro-blog h5{font-weight: bold}
 #nuestro-blog .carta{
     padding: 5px;
     margin:20px;
@@ -441,7 +362,9 @@ div.grupo-2 a{
         padding: 30px 40px;
         font-weight: bold;
     }
-
+    #contactanos h1{
+        font-size: 2em;
+    }
     /*Consejos*/
     #consejos .container{
         display: flex;
@@ -490,13 +413,19 @@ div.grupo-2 a{
         justify-content: space-evenly;
     }
     #nuestros-servicios .carta{
-        flex-direction: column;
         height: 380px;
         width: 390px;
-        
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     #nuestros-servicios p{
         display: block;
+    }
+    #nuestros-servicios a{
+        padding: 0px;
+        margin: 0px;
     }
     /*Opiniones*/
     #opiniones .container .opiniones{
