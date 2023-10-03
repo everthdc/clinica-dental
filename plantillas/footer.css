@@ -63,3 +63,44 @@ div.grupo-2 a{
     height: auto;
     display: block;
 }
+/*Whassap Flotante*/
+.whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom:60px;
+    right: 60px;
+    background-color: green;
+    color: #000;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1;
+
+    align-content: center;
+   
+}
+.float:hover{
+    color: #FFF;
+    animation:shake is;
+    width: 100px;
+    height: 100px;
+    animation-iteration-count: infinite;
+}
+
+.whatsapp-float a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.whatsapp-float a:hover{
+    width: 70px;
+    height: 70px;
+    bottom:55px;
+    right: 55px;
+    animation:shake is;
+}
+
+

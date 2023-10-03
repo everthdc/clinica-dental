@@ -9,208 +9,44 @@ body{
     margin: 0;
     padding: 0;
 }
-button{
-    font-size: 20px;
-    font-weight:bold;
-    padding: 15px 15px;
-    border-radius: 10px;
-    background-color: #0096ff;
-    border: none;
-    color: white;
-}
-button:hover{
-    background-color: #1270b2;
-}
 .container{
     max-width: 1400px;
     margin: auto;
 }
-/*NAVBAR menu*/
-.navbar {
-    background-color: white; /* Cambia el color de fondo según tu preferencia */
-    color: #fff; /* Cambia el color del texto según tu preferencia */
+
+/*contacto Seccion*/
+
+#banner{
+    background-color: #0096FF;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: 2px solid #d5d7d8;
-}
-.container{
-    border-bottom: 3px solid #f0f6fb;
-}
-.logo {
-    flex-grow: 1; /* Permite que el logotipo crezca y ocupe el espacio disponible */
-    text-align: center; /* Centra el contenido horizontalmente */
-}
-.logo img {
-    max-width: 100%; /* Ajusta el tamaño del logo según tus necesidades */
-    
-}
-/*icono*/
-.social-icons a{
-    background-color: #F0F6FB; /* Color plomo */
-    border-radius: 30px; /* Hace que el borde sea redondeado (circular) */
-    width: 30px; /* Ancho del icono */
-    height: 30px; /* Altura del icono (ajusta según tus necesidades) */
-    text-decoration: none;
     justify-content: center;
-    align-items: center;
-    margin: 0;
-}
+    text-align: center;
+    color: white;
+    padding: 20px 0;
 
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
 }
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
+#banner h1{
+    font-size: 1.7em;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-.menu a:hover {
-    color: #FCF6FB; /* Cambia el color de resaltado según tu preferencia */
-}
-
-/* Icono de hamburguesa */
-.menu-icon {
-    display: none;/* Desaparece cursor hamburguesa*/
-    font-size: 24px;
-    cursor: pointer;
-    color: black;
-}
-
-/* Estilos para pantallas pequeñas (responsive) */
-@media screen and (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta la lista de menú en pantallas pequeñas */
-        flex-direction: column;
-        background-color: #0096FF; /* Cambia el color de fondo según tu preferencia */
-        position: absolute;
-        top: 60px; /* Ajusta la posición vertical del menú según tus necesidades */
-        left: 0;
-        right: 0;
-        padding: 30px 30px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .menu.active {
-        display: flex; /* Muestra la lista de menú cuando el menú está activo */
-    }
-
-    .menu-icon {
-        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
-    }
+    color: white;
     
 }
-
-/* Estilos para los íconos de redes sociales en pantallas pequeñas */
-.social-icons {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.social-icons a {
-    margin: 0 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Pie de Página*/
-footer{
-    background: #0096FF;
-    padding: 25px 10px;
-    color: white;
-    line-height: 1.9;
-}
-.single-box h2{
-    font-size: 20px;
-    font-weight: 250;
-}
-.single-box p{
-    text-align: justify;
-}
-.single-box  i{
-   padding: 10px;
-}
-.single-box ul{
-   list-style: none; 
-}
-.grupo-2{
-    text-align: center;
-}
-
-div.single-box ul li a#texBlank {
-    color: white;
-    text-decoration: underline white;
-}
-
-div.grupo-2 a{
-    color: white;
-    text-decoration: underline white; 
-}
-.img-responsive{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-/*Whassap Flotante*/
-.whatsapp-float{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom:60px;
-    right: 60px;
-    background-color: green;
-    color: #000;
-    border-radius: 50px;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1;
-
-    align-content: center;
-   
-}
-.float:hover{
-    color: #FFF;
-    animation:shake is;
-    width: 100px;
-    height: 100px;
-    animation-iteration-count: infinite;
-}
-
-.whatsapp-float a{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+#banner a{
     text-decoration: none;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin: auto;
 }
-.whatsapp-float a:hover{
-    width: 70px;
-    height: 70px;
-    bottom:55px;
-    right: 55px;
-    animation:shake is;
-}
+
+
+
+
+
+
+
+
+
+
 

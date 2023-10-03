@@ -3,44 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros Clinica Dental</title>
+    <title>Doctores</title>
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/5475ee9225.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/nosotros.css">
-</head>
-<body>
-    <!--Barra de navegacion-->
-    <nav class="navbar">
-        <label for="menu-toggle" class="menu-icon">&#9776; <!--simbolo de hamburguesa--></label>
-        <ul class="menu">
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="doctores.html">Doctores</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
-            <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
-            <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
-            <a href="https://www.youtube.com/" id="stilo-icono" class="fa-brands fa-youtube fg-2xl" style="color: #0096ff;"></a>
-        </div>
-    </nav>
-    <!-- Usando js -->
+    <!--Jquery y JS para incluir el navbar desde otro html-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        // JavaScript para mostrar/ocultar el menú al hacer clic en el icono de hamburguesa
-        const menuToggle = document.querySelector(".menu-icon");
-        const menu = document.querySelector(".menu");
-        menuToggle.addEventListener("click", () => {
-            menu.classList.toggle("active");
+        $(document).ready(function () {
+          $('.navbar-container').load('plantillas/navbar.html');
+        });
+        $(document).ready(function () {
+          $('.footer-container').load('plantillas/footer.html');
         });
     </script>
-    <section id="contactanos">
+</head>
+<body>
+    <!--Se carga el Navbar en el contenedor-->
+    <div class="navbar-container"></div>
+    <!--nosotros Presentacion-->
+    <section id="banner">
         <div class="container">
             <h1>Nosotros</h1>
             <p>
@@ -48,134 +32,114 @@
             </p>
         </div>
     </section>
-    <!--Nuestros especialistas-->
-    <section id="nuestros-especialistas">
+    <!--nosotros -->
+    <section id="nosotros">
         <div class="container">
-            <h2>Nuestros Especialistas</h2>
-            <div class="doctores">
-                <div class="carta">
-                    <div class="img-container"><img src="img/dr01.jpg"/></div>
-                    <h3>DIEGO SARAVIA</h3>
-                    <h4>ORTODONCISTA</h4>
-                    <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
-                </div>
-                <div class="carta">
-                    <div class="img-container"><img src="img/dr02.jpg"/></div>
-                    <h3>MAYORY VELIZ</h3>
-                    <h4>DENTISTA</h4>
-                    <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
-                </div>
-                <div class="carta">
-                    <div class="img-container"><img src="img/dr03.jpg"/></div>
-                    <h3>JEMMY DOE</h3>
-                    <h4>DENTISTA</h4>
-                    <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
-                </div>
-                <div class="carta">
-                    <div class="img-container"><img src="img/dr04.jpg"/></div>
-                    <h3>CLOE VERA</h3>
-                    <h4>DENTISTA</h4>
-                    <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
-                    <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
-                </div>
-            </div>
+            <div class="img-container"></div>
+                <div class="texto">
+                    <h2><B>Nosotros</B></h2>
+                    <h1>lo que deberías saber</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to
+                        make a type specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div> 
+            </div>           
         </div>
     </section>
-    <!--Opiniones-->
-    <section id="opiniones">
+    <!--hacemos nuestros esfuerzo-->
+    <section id="esfuerzo">
         <div class="container">
-            <h2>Lo que nuestros clientes opinan</h2>
-            <p>Clientes de diferentes ciudades</hp>
-            <div class="opiniones">
-                <div class="carta">
-                    <h3>Lorem Ipsum is simply dummy text</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
-                    <div class="img-container"></div>
-                    <h4>Jane Cooper</h4>
-                    <p class="CEO">CEO at ABC Corporation</p>
-                </div>
-                <div class="carta">
-                    <h3>Lorem Ipsum is simply dummy text</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
-                    <div class="img-container"></div>
-                    <h4>Jane Cooper</h4>
-                    <p class="CEO">CEO at ABC Corporation</p>
-                </div>
-                <div class="carta">
-                    <h3>Lorem Ipsum is simply dummy text</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
-                    <div class="img-container"></div>
-                    <h4>Jane Cooper</h4>
-                    <p class="CEO">CEO at ABC Corporation</p>
-                </div>
+            <div class="texto">
+                <h2><B>Hacemos nuestro mejor<br>esfuerzo desde 2015</B></h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled it to
+                        make a type specimen book. It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="img-container"></div>
+        </div>
+    </section>   
+   <!--Nuestros especialistas-->
+   <section id="nuestros-especialistas">
+    <div class="container">
+        <h2><b>Nuestros Especialistas</b></h2>
+        <div class="doctores">
+            <div class="carta">
+                <div class="img-container"><img src="img/dr01.jpg"/></div>
+                <h3>DIEGO SARAVIA</h3>
+                <h4>ORTODONCISTA</h4>
+                <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
+            </div>
+            <div class="carta">
+                <div class="img-container"><img src="img/dr02.jpg"/></div>
+                <h3>MAYORY VELIZ</h3>
+                <h4>DENTISTA</h4>
+                <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
+            </div>
+            <div class="carta">
+                <div class="img-container"><img src="img/dr03.jpg"/></div>
+                <h3>JEMMY DOE</h3>
+                <h4>DENTISTA</h4>
+                <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
+            </div>
+            <div class="carta">
+                <div class="img-container"><img src="img/dr04.jpg"/></div>
+                <h3>CLOE VERA</h3>
+                <h4>DENTISTA</h4>
+                <a href="https://www.facebook.com/?locale=es_LA" id="stilo-icono" class="fa-brands fa-facebook-f fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://twitter.com/?lang=es" id="stilo-icono" class="fa-brands fa-twitter fg-2xl" style="color: #0096ff;"></a>
+                <a href="https://www.instagram.com/" id="stilo-icono" class="fa-brands fa-instagram fg-2xl" style="color: #0096ff;"></a>
             </div>
         </div>
-    </section>
-
-
-      <!--Pie de Pagina-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <img src="img/logoBlanco.jpg" alt="logoClinicaDental" class="img-responsive">
-                        <h2>Nosotros</h2>
-                        <p>Lorem ipsum ddsdsdsdsdsdolor sit amet consectetur adipisicing elit. Architecto, voluptates!</p>
-                    </div>    
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>Horarios de Atencion:</h2>
-                        <p>Lunes a Sabado de 9:30 am-4:30 pm</p>
-                        <h2>Direccion:</h2>
-                        <p>A-67 south Ex Delhi-11002</p>
-                        <h2>Email:</h2>
-                        <p>abc@abc.com</p>
-                        <h2>Telefonos:</h2>
-                        <p>1800-458495-4455</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>Stay Connected</h2>
-                        <ul>
-                            <li><i href="#" class="fa-brands fa-facebook-f fg-2sm"></i>Facebook</li>
-                            <li><i href="#" class="fa-brands fa-twitter fg-2sm"></i>Twitter</li>  
-                            <li><i href="#" class="fa-brands fa-google fg-2sm"></i>Google</li>
-                            <li><i href="#" class="fa-brands fa-instagram fg-2sm"></i>Instagram</li>
-                            <li><i href="#" class="fa-brands fa-youtube fg-2sm" ></i>Youtube</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>Politicas</h2>
-                        <ul>
-                            <li><a href="" id="texBlank">Aviso Legal</a></li>
-                            <li><a href="" id="texBlank">Politica de Privacidad</a></li>
-                            <li><a href="" id="texBlank">Politica de Cookies</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grupo-2" id="Copyright">
-                <small>Copyright © 2023 <a href="https://www.cuanticagroup.com/" id="texBlank">CUANTICA GROUP</a> - Todos los derechos Reservados - version 1.0</small>
-            </div>
-        </div>
-    </footer>
-    <!--Whatsapp Flotante-->
-    <div class="whatsapp-float">
-        <a href="https://api.whatsapp.com/send?phone=51925306724&text=Hola%20%2Cesto%20es%20una%20prueba%20Cuantica%20Clinica%20Dental." class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp" style="color: white;"></i></a>
-        
     </div>
+</section>
+<!--Opiniones-->
+<section id="opiniones">
+    <div class="container">
+        <h2><b>Lo que nuestros clientes opinan</b></h2>
+        <p>Clientes de diferentes ciudades</hp>
+        <div class="opiniones">
+            <div class="carta">
+                <h3><b>Lorem Ipsum is simply dummy text</b></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
+                <div class="img-container"></div>
+                <h4>Jane Cooper</h4>
+                <p class="CEO">CEO at ABC Corporation</p>
+            </div>
+            <div class="carta">
+                <h3><b>Lorem Ipsum is simply dummy text</b></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
+                <div class="img-container"></div>
+                <h4>Jane Cooper</h4>
+                <p class="CEO">CEO at ABC Corporation</p>
+            </div>
+            <div class="carta">
+                <h3><b>Lorem Ipsum is simply dummy text</b></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nam soluta beatae. Enim esse similique, eum ullam sit debitis ducimus aperiam sapiente dolores vel obcaecati quos beatae? Consequuntur, veritatis hic.</p>
+                <div class="img-container"></div>
+                <h4>Jane Cooper</h4>
+                <p class="CEO">CEO at ABC Corporation</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Se carga el Footer en el contenedor-->
+<div class="footer-container"></div>
 </body>
 </html>  
 

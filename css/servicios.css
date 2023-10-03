@@ -9,51 +9,36 @@ body{
     margin: 0;
     padding: 0;
 }
-button{
-    font-size: 20px;
-    font-weight:bold;
-    padding: 15px 15px;
-    border-radius: 10px;
-    background-color: #0096ff;
-    border: none;
-    color: white;
-}
-button:hover{
-    background-color: #1270b2;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-/*Banner*/
+/*seccion Servicios*/
+
 #banner{
-    background-color: #0096ff;
-    height:150px;
-    text-align: center;
+    background-color: #0096FF;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+
 }
 #banner h1{
-    color: white;
+    font-size: 1.7em;
     font-weight: bold;
-    font-size: 2em;
-}
-#banner h2{
     color: white;
-    font-size: 1.4em;
+    
 }
-/*Nuestros servicios*/
+#banner a{
+    text-decoration: none;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+/*Servicios*/
 #nuestros-servicios .container{
     text-align: center;
     padding: 80px 10px;
     background-color: #f0f6fb;
-}
-#nuestros-servicios .servicios{
-    margin-top: 45px;
-}
-#nuestros-servicios h1{
-    font-weight: bold;
 }
 #nuestros-servicios p{
     display: none;
@@ -61,18 +46,14 @@ button:hover{
 #nuestros-servicios h2{
     margin-top: 0;
 }
-#nuestros-servicios h3{
-    font-weight: bold;
-}
 #nuestros-servicios a{
+    text-decoration: none;
     background-position: center center;
     background-size: cover;
     color: white;
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
-    font-weight: bold;
-    font-size: 18px;
 }
 #nuestros-servicios .container .carta{
     background-position: center center;
@@ -81,16 +62,16 @@ button:hover{
     padding: 50px;
     margin: 20px;
     border-radius: 15px;
-    text-align: center;
-    justify-content: center;
 }
 #nuestros-servicios .carta:first-child{
+
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
     ,url("/img/blanqueamientodental.png");
+    
 }
 #nuestros-servicios .carta:nth-child(2){
     background-image: linear-gradient(
@@ -132,65 +113,20 @@ button:hover{
     )
     ,url("/img/muelas-juicio.jpg");
 }
-
-/*Whassap Flotante*/
-.whatsapp-float{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom:60px;
-    right: 60px;
-    background-color: green;
-    color: #000;
-    border-radius: 50px;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1;
-
-    align-content: center;
-   
-}
-.float:hover{
-    color: #FFF;
-    animation:shake is;
-    width: 100px;
-    height: 100px;
-    animation-iteration-count: infinite;
-}
-.whatsapp-float a{
+@media (min-width: 1000px){
+/*Servicios*/
+#nuestros-servicios .servicios{
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.whatsapp-float a:hover{
-    width: 70px;
-    height: 70px;
-    bottom:55px;
-    right: 55px;
-    animation:shake is;
+#nuestros-servicios .carta{
+    flex-direction: column;
+    height: 380px;
+    width: 390px;
+    
 }
-@media(min-width:800px){
-    /*Servicios*/
-    #nuestros-servicios .servicios{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    #nuestros-servicios .carta{
-        height: 380px;
-        width: 390px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #nuestros-servicios p{
-        display: block;
-    }
-    #nuestros-servicios a{
-        padding: 0px;
-        margin: 0px;
-    }
+#nuestros-servicios p{
+    display: block;
+}
 }
