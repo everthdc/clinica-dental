@@ -55,8 +55,22 @@ button:hover{
 /*Detalles del servicio*/
 #detalles-servicio .container{
     text-align: left;
-    padding: 80px 50px;
+    padding: 80px 60px;
     align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#detalles-servicio .img-container{
+    background-image: url("/img/revisión-dental.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 400px;
+    margin-top: 30px;
+    align-content: center;
+    border-radius: 10px;
+    rotate: -12deg;
+    transform: rotate3d(0,1,1,5deg);
 }
 #detalles-servicio h4{
     font-weight:900;
@@ -91,6 +105,7 @@ button:hover{
     #detalles-servicio .container{
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
         perspective: 200px;
     }
