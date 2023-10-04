@@ -9,13 +9,12 @@ body{
     margin: 0;
     padding: 0;
 }
-.container{
-    max-width: 1400px;
+#nuestros-especialistas .container{
+    max-width: 1600px;
     margin: auto;
 }
 
 /*Doctores Seccion*/
-
 #banner{
     background-color: #0096FF;
     display: flex;
@@ -38,4 +37,105 @@ body{
     font-weight: bold;
     color: white;
     margin: auto;
+}
+/*Nuestros doctores*/
+#nuestros-doctores .container{
+    text-align: left;
+    padding: 80px 50px;
+    align-items: center;
+}
+#nuestros-doctores h1{font-weight: bold;}
+#nuestros-doctores .container {
+    flex-direction: column-reverse;
+    text-align:center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#nuestros-doctores .img-container{
+    background-image: url("/img/doctor.png");
+    max-width: 100%;
+    background-size: cover;
+    margin-top: 25px;
+    width: 400px;
+    height: 400px;
+}
+/*Nuestros especialistas*/
+#nuestros-especialistas .container{
+    text-align: center;
+    padding: 30px 10px;
+    justify-content: center;
+    align-items: center;
+}
+#nuestros-especialistas h1{font-weight: bold;margin: 15px;}
+#nuestros-especialistas h3{margin-top: 15px;margin-bottom: 0px;}
+#nuestros-especialistas h4{font-weight: bold;}
+#nuestros-especialistas h2{
+    margin-top: 50px;
+    text-align: center;
+}
+#nuestros-especialistas .container .doctores {
+    align-items: center;
+    display:flex;
+    padding: 20px 5px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#nuestros-especialistas .container .carta{
+    padding: 7px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#nuestros-especialistas .img{
+    width: 1800px;
+    height: 200px;
+}
+#nuestros-especialistas h3{
+    padding: 5px;
+    text-align: center;
+}
+#nuestros-especialistas h4{
+    padding: 5px;
+    text-align: center;
+    color: #0096FF;
+}
+#stilo-icono{
+    padding: 0px 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+@media (max-width: 1500px){
+   /*Especialistas*/
+   #nuestros-especialistas .container .doctores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    
+}
+/*Vista escritorio*/
+@media (min-width: 800px){
+    #nuestros-doctores .container {
+        display: flex;
+        flex-direction: row;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+    }
+    #nuestros-doctores .texto{
+        max-width: 50%;
+        padding-left: 50px;
+        text-align: start;
+    }
+    #nuestros-doctores .img-container{
+        background-image: url("/img/doctor.png");
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        margin-top: 0px;
+    }
 }
