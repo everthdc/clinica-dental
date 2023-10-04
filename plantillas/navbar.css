@@ -39,6 +39,7 @@ button:hover{
 .logo {
     flex-grow: 1; /* Permite que el logotipo crezca y ocupe el espacio disponible */
     text-align: center; /* Centra el contenido horizontalmente */
+    margin-right: 225px;
 }
 .logo img {
     max-width: 100%; /* Ajusta el tamaño del logo según tus necesidades */
@@ -114,7 +115,9 @@ button:hover{
         justify-content: center;
         align-items: center;
     }
-
+    .logo{
+        margin-right: 0px;
+    }
     .menu.active {
         display: flex; /* Muestra la lista de menú cuando el menú está activo */
         transition: 0.5s;
