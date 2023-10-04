@@ -38,3 +38,107 @@ body{
     color: white;
     margin: auto;
 }
+/*Publicacion destacada*/
+#publicacion-dest .container{
+    margin-top:60px;
+}
+#publicacion-dest .destacado{
+    text-align: left;
+    padding: 30px;
+    align-items: center;
+}
+#publicacion-dest h1{font-weight: bold; text-align:center;}
+#publicacion-dest .destacado h5{font-weight: bold;}
+#publicacion-dest .img-container{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/img/blog1.jpg");
+    margin-bottom: 20px;
+}
+#publicacion-dest i, span{
+    color: #0096ff;
+}
+hr{
+    height: 3px;
+    background-color: #0096FF;
+}
+/*Publicaciones*/
+#nuestras-publicaciones .container{
+    padding: 50px 25px;
+}
+#nuestras-publicaciones{
+    text-align: center;
+}
+#nuestras-publicaciones h1{font-weight: bold}
+#nuestras-publicaciones h5{font-weight: bold}
+#nuestras-publicaciones .carta{
+    padding: 5px;
+    margin:20px;
+    text-align: left;
+}
+#nuestras-publicaciones .carta:first-child .img-container{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/img/blog1.jpg");
+}
+#nuestras-publicaciones .carta:nth-child(2) .img-container{
+    height: 30vh;
+    display: flex;
+    margin: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/img/blog2.jpg");
+}
+#nuestras-publicaciones .carta:nth-child(3) .img-container{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/img/blog3.jpg");
+}
+#nuestras-publicaciones i, span{
+    color: #0096ff;
+}
+#nuestras-publicaciones #detalles{
+    margin-top: 10px;
+}
+/*Vista escritorio*/
+@media (min-width: 800px){
+    /*Publicacion destacada*/
+    #publicacion-dest .destacado {
+        display: flex;
+        flex-direction: row;
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+    }
+    #publicacion-dest .texto{
+        max-width: 50%;
+        padding-left: 50px;
+        text-align: start;
+    }
+    #publicacion-dest .img-container{
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+        margin-top: 0px;
+    }
+    /*Publicaciones*/
+    #nuestras-publicaciones .container .publicaciones{
+        display: flex;
+    }
+    #nuestras-publicaciones .container p:not(.publicaciones *){
+        padding: 20px 200px;
+    }
+}
